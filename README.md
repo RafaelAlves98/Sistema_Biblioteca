@@ -54,7 +54,7 @@ Essa aplicação é um **software back-end web** porque:
 
 Se fosse uma pessoa, o back-end seria o bibliotecário nos bastidores, organizando os livros e os registros, enquanto o front-end seria o balcão onde os clientes fazem os pedidos! Espero que essa explicação tenha ficado clara para você que está começando!
 
-─────────────────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────
 
 # Explicação dos Elementos de Entrada, Processamento e Saída da Aplicação
 
@@ -139,7 +139,7 @@ Imagine que você quer adicionar um novo empréstimo:
 - **Processamento:** O `EmprestimoView` chama o `EmprestimoController`, que usa o `BancoDeEmprestimos` para salvar o empréstimo na lista.
 - **Saída:** O sistema responde com `"Empréstimo adicionado com sucesso!"`.
 
-─────────────────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────
 # Padrões de Design na Aplicação da Biblioteca
 
 Padrões de design (ou *Design Patterns*) são como "receitas" testadas e aprovadas para resolver problemas comuns no desenvolvimento de software. Eles ajudam a organizar o código, torná-lo mais reutilizável e fácil de manter. Abaixo, listo os principais tipos de padrões de design, com uma breve explicação e exemplos de como eles podem aparecer na aplicação da biblioteca.
@@ -187,7 +187,7 @@ Na aplicação da biblioteca, alguns padrões são evidentes:
 
 Esses padrões tornam o código mais organizado, fácil de expandir e reutilizar. Por exemplo, o MVC na aplicação permite que você adicione novos endpoints (na `View`) sem mexer nos dados (no `Model`). Para iniciantes, pense nos padrões como "truques" que os programadores experientes usam para evitar bagunça e resolver problemas mais rápido!
 
-─────────────────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────
 # Padrões de Design que Poderiam Ajudar no Projeto da Biblioteca
 
 A aplicação da biblioteca já usa alguns padrões de design, como o MVC (Model-View-Controller), mas há outros que poderiam torná-la ainda melhor. Abaixo, listo padrões que se encaixariam bem no projeto, com uma explicação simples de como eles ajudariam e onde poderiam ser aplicados. Pense nesses padrões como "ferramentas extras" para deixar o sistema mais robusto e fácil de mexer no futuro!
