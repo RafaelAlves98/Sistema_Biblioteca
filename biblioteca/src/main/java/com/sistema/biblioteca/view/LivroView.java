@@ -11,18 +11,20 @@ public class LivroView {
 
     LivroController lc = new LivroController();
 
+    // Endpoint para buscar todos os livros inseridos
     @GetMapping("/livro")
     public List<Livro> getAllLivros() {
         return lc.pegarTodosOsLivros();
     }
 
+    // Endpoint para inserir um novo livro
     @PostMapping("/livro")
     public String postNovoLivro(@RequestBody Livro l) {
         lc.inserirNoBanco(l);
         return "Sucesso!";
     }
 
-    // Novo endpoint para atualizar um livro existente
+    // Endpoint para atualizar um livro existente
     @PutMapping("/livro/{id}")
     public String putAtualizarLivro(@PathVariable int id, @RequestBody Livro livroAtualizado) {
         Livro livroExistente = lc.pegarLivroPorId(id);
@@ -40,7 +42,7 @@ public class LivroView {
         }
     }
 
-    // Novo endpoint para deletar um livro
+    // Endpoint para deletar um livro
     @DeleteMapping("/livro/{id}")
     public String deleteLivro(@PathVariable int id) {
         boolean sucesso = lc.deletarLivro(id);
